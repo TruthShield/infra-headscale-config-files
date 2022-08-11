@@ -5,8 +5,8 @@ services:
     volumes:
       - ./config:/etc/headscale/
     ports:
-      - 8080:8080
-      - 443:443
-      - 9090:9090
+      - 0.0.0.0:8080:8080
+      - 0.0.0.0:443:443
+      - 0.0.0.0:9090:9090
     command: headscale serve
     restart: unless-stopped
