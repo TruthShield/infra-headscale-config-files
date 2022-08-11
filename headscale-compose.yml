@@ -3,9 +3,10 @@ services:
   headscale:
     image: headscale/headscale:latest
     volumes:
-      - ./config:/etc/headscale/
+      - ./config:/opt/headscale/
     ports:
       - 8080:8080
       - 443:443
+      - 9090:9090
     command: headscale serve
     restart: unless-stopped
