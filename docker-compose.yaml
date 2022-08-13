@@ -2,6 +2,7 @@ version: "3.5"
 services:
   headscale:
     image: headscale/headscale:latest
+    container_name: headscale
     volumes:
       - ./config:/etc/headscale/
     ports:
