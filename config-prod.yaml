@@ -179,7 +179,8 @@ acl_policy_path: ""
 dns_config:
   # List of DNS servers to expose to clients.
   nameservers:
-    - 1.1.1.1
+    - 162.159.44.83
+    - 162.159.38.102
 
   # Split DNS (see https://tailscale.com/kb/1054/dns/),
   # list of search domains and the DNS to query for each one.
@@ -202,7 +203,7 @@ dns_config:
   # `base_domain` must be a FQDNs, without the trailing dot.
   # The FQDN of the hosts will be
   # `hostname.namespace.base_domain` (e.g., _myhost.mynamespace.example.com_).
-  base_domain: example.com
+  base_domain: truthshield.co
 
 # Unix socket used for the CLI to connect without authentication
 # Note: for local development, you probably want to change this to:
