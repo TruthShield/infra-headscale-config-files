@@ -13,5 +13,8 @@
       "dst": ["autogroup:self"],
       "users": ["autogroup:nonroot", "root"]
     }
-  ]
+  ],
+  "autoApprovers": {
+    "exitNode": [""]
+  }
 }
