@@ -14,5 +14,11 @@
       "dst": ["autogroup:self"],
       "users": ["autogroup:nonroot", "root"]
     }
-  ]
+  ],
+  "autoApprovers": {
+    "exitNode": ["tag:all"]
+  },
+  "tagOwners": {
+    "tag:all": ["autogroup:members"]
+  }
 }
