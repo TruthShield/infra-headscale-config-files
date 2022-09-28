@@ -1,0 +1,17 @@
+{
+    "tagOwners": {
+        "tag:exit": ["test"],
+    },
+
+    "groups": {
+        "group:test": ["test"]
+    },
+
+    "acls": [
+        {"action": "accept", "users": ["*"], "ports": ["*:*"]},
+    ],
+
+    "autoApprovers": {
+        "exitNode": ["tag:exit"]
+    }
+}
