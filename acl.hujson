@@ -2,6 +2,8 @@
   "acls": [
     {
       "action": "accept",
+      "src":"*",
+      "dest":"*:*",
       "users": ["*"],
       "hosts":"*"
       "ports": ["autogroup:internet:443,22,80"],
