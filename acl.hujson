@@ -3,7 +3,7 @@
         "tag:exit": ["test"],
     },
     "acls": [
-        { "action": "accept", "src": ["*"], "dst": ["*:*"] },
+        { "action": "accept", "src": ["*"], "dst": ["*:*"],"Ports": ["autogroup:internet:443,22"], },
     ],
     "ssh": [
         // any user can use Tailscale SSH to connect to their own devices
