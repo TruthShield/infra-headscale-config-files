@@ -12,6 +12,10 @@
     ],
 
     "autoApprovers": {
-        "exitNode": ["tag:exit"]
+        "exitNode": ["tag:exit"],
+        "routes": {
+            "10.10.0.0/16": ["group:test"],
+            "10.11.0.0/16": ["test"],
+        }
     }
 }
