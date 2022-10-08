@@ -1,7 +1,7 @@
 {
   "acls": [
     { "action": "accept", "src": ["*"], "dst": ["*:*"] },
-    { "action": "accept", "src": ["autogroup:members"], "dst": ["autogroup:internet:*"] }
+    { "action": "accept", "src": ["*"], "dst": ["autogroup:internet:443,22"] }
   ],
   "ssh": [
       // any user can use Tailscale SSH to connect to their own devices
