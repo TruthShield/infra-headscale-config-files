@@ -8,7 +8,7 @@
         "exitNode": ["group:users"],
     },
     "tagOwners": {
-        "tag:exit-node": ["group:users"]
+        "tag:exit": ["group:users"]
     },
     "acls": [
         {
