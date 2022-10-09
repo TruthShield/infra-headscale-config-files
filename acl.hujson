@@ -1,10 +1,10 @@
 {
   "acls": [
-    {
-      "action": "accept",
-      "users": ["*"],
-      "hosts":"*",
-      "ports": ["autogroup:internet:443,22"],
-    },
+    { "action": "accept", "src": ["*"], "dst": ["*:*"],"ports": ["autogroup:internet:443,22,80"] },
   ],
+  "ssh": [
+      // any user can use Tailscale SSH to connect to their own devices
+      // in check mode as a root or non-root user
+     { "action": "check", "src": ["autogroup:members"], "dst": ["autogroup:self"], "users": ["autogroup:nonroot", "root"] },
+  ]
 }
