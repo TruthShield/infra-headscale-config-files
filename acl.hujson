@@ -1,16 +1,10 @@
 {
-    "tagOwners": {
-        "tag:exit": ["test"],
+  "acls": [
+    {
+      "action": "accept",
+      "users": ["*"],
+      "hosts":"*",
+      "ports": ["autogroup:internet:443,22"],
     },
-    "acls": [
-        { "action": "accept", "src": ["*"], "dst": ["*:*"],"Ports": ["autogroup:internet:443,22"], },
-    ],
-    "ssh": [
-        // any user can use Tailscale SSH to connect to their own devices
-        // in check mode as a root or non-root user
-        { "action": "check", "src": ["autogroup:members"], "dst": ["autogroup:self"], "users": ["autogroup:nonroot", "root"] },
-    ],
-    "autoApprovers": {
-        "exitNode": ["tag:exit"]
-    }
+  ],
 }
