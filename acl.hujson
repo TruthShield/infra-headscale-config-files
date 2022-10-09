@@ -1,20 +1,17 @@
 {
     "groups":{
         "group:users": [
-            "colin"
+            "user"
         ],
     },
     "autoApprovers": {
         "exitNode": ["group:users"],
     },
-    "tagOwners": {
-        "tag:exit": ["group:users"]
-    },
     "acls": [
         {
             "action": "accept",
-            "src": ["*"],
-            "dst": ["0.0.0.0/0:*"]
+            "src": ["group:users"],
+            "dst": ["group:users","0.0.0.0/0:*"]
         }
     ]
 }
