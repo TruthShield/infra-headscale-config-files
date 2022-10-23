@@ -114,11 +114,11 @@ db_path: /etc/headscale/db.sqlite
 
 # # Postgres config
 # db_type: postgres
-# db_host: localhost
+# db_host: 5.161.141.2
 # db_port: 5432
-# db_name: headscale
-# db_user: foo
-# db_pass: bar
+# db_name: headscale_dev
+# db_user: postgres
+# db_pass: dbadmin_5251
 
 ### TLS configuration
 #

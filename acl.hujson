@@ -10,8 +10,8 @@
     "acls": [
         {
             "action": "accept",
-            "src": ["*"],
-            "dst": ["*:*"]
+            "src": ["group:users"],
+            "dst": ["group:users","0.0.0.0/0:*"]
         }
     ]
 }
