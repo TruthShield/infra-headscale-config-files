@@ -109,16 +109,16 @@ ephemeral_node_inactivity_timeout: 30m
 node_update_check_interval: 10s
 
 # SQLite config
-db_type: sqlite3
-db_path: /etc/headscale/db.sqlite
+#db_type: sqlite3
+#db_path: /etc/headscale/db.sqlite
 
 # # Postgres config
-# db_type: postgres
-# db_host: 5.161.141.2
-# db_port: 5432
-# db_name: headscale_dev
-# db_user: postgres
-# db_pass: dbadmin_5251
+db_type: postgres
+db_host: 5.161.141.2
+db_port: 5432
+db_name: headscale_dev
+db_user: postgres
+db_pass: dbadmin_5251
 
 ### TLS configuration
 #
