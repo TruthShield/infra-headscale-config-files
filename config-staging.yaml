@@ -9,7 +9,7 @@
 #
 # https://myheadscale.example.com:443
 #
-server_url: https://headscale.truthshield.io:443
+server_url: https://headscale.highbrowtech.xyz:443
 
 # Address to listen to / bind to on the server
 #
@@ -57,7 +57,7 @@ derp:
   server:
     # If enabled, runs the embedded DERP server and merges it into the rest of the DERP config
     # The Headscale server_url defined above MUST be using https, DERP requires TLS to be in place
-    enabled: false
+    enabled: true
 
     # Region ID to use for the embedded DERP server.
     # The local DERP prevails if the region ID collides with other region ID coming from
@@ -134,7 +134,7 @@ acme_url: https://acme-v02.api.letsencrypt.org/directory
 acme_email: "osman.highbrow@gmail.com"
 
 # Domain name to request a TLS certificate for:
-tls_letsencrypt_hostname: "headscale.truthshield.io"
+tls_letsencrypt_hostname: "headscale.highbrowtech.xyz"
 
 # Client (Tailscale/Browser) authentication mode (mTLS)
 # Acceptable values:
@@ -165,7 +165,7 @@ log_level: info
 # Path to a file containg ACL policies.
 # ACLs can be defined as YAML or HUJSON.
 # https://tailscale.com/kb/1018/acls/
-acl_policy_path: "/etc/headscale/acl.hujson"
+acl_policy_path: /etc/headscale/acl.hujson
 
 ## DNS
 #
@@ -197,13 +197,13 @@ dns_config:
 
   # Whether to use [MagicDNS](https://tailscale.com/kb/1081/magicdns/).
   # Only works if there is at least a nameserver defined.
-  magic_dns: true
+  magic_dns: false
 
   # Defines the base domain to create the hostnames for MagicDNS.
   # `base_domain` must be a FQDNs, without the trailing dot.
   # The FQDN of the hosts will be
   # `hostname.namespace.base_domain` (e.g., _myhost.mynamespace.example.com_).
-  base_domain: truthshield.co
+  base_domain: ""
 
 # Unix socket used for the CLI to connect without authentication
 # Note: for local development, you probably want to change this to:
